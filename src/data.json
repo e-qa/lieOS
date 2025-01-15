@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "x": 5,
+    "y": 20,
+    "img": "/images/calculator-2.svg",
+    "name": "calc.app"
+  },
+  {
+    "id": 1,
+    "x": 5,
+    "y": 120,
+    "img": "/images/folder.svg",
+    "name": "folder"
+  },
+  {
+    "id": 2,
+    "x": 5,
+    "y": 220,
+    "img": "/images/monitor.svg",
+    "name": "My PC"
+  },
+  {
+    "id": 3,
+    "x": 5,
+    "y": 320,
+    "img": "/images/note.svg",
+    "name": "note.txt"
+  },
+  {
+    "id": 4,
+    "x": 5,
+    "y": 420,
+    "img": "/images/terminal.svg",
+    "name": "terminal"
+  }
+]

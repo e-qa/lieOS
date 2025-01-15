@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow: hidden;
+  height: 100dvh;
+  user-select: none;
+  -webkit-user-select: none;
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 0.5px black;
+}
+
+img {
+  pointer-events: none;
+}
+
+@font-face {
+  font-family: 'Perfect-DOS-VGA-437';
+  src: url('/fonts/Perfect-DOS-VGA-437.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.rnd-resize-handle {
+  cursor: pointer;
+}
+
+.rnd-resize-handle.bottom {
+  cursor: s-resize;
+}
+
+.rnd-resize-handle.top {
+  cursor: n-resize;
+}
+
+.rnd-resize-handle.left {
+  cursor: w-resize;
+}
+
+.rnd-resize-handle.right {
+  cursor: e-resize;
+}
+
+.cstm-overlay {
+  background-color: rgba(162, 186, 205, 0.25);
+  outline: rgba(162, 186, 205, 0.3) solid 1px;
+}
