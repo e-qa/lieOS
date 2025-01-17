@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Rnd } from 'react-rnd';
 
-const Drag = ({ children, x = 240, y = 0 }) => {
+const Drag = ({ children, x = 250, y = 50 }) => {
   const [dimensions, setDimensions] = useState({
     x: x,
     y: y,
@@ -13,17 +13,18 @@ const Drag = ({ children, x = 240, y = 0 }) => {
   };
 
   return (
-    <Rnd
-      // size={{ width: dimensions.width, height: dimensions.height }}
-      position={{ x: dimensions.x, y: dimensions.y }}
-      onDragStop={handleDragStop}
-      enableResizing={false}
-      style={{
-        cursor: 'default',
-      }}
-    >
-      {children}
-    </Rnd>
+    <div onClick={() => {}}>
+      <Rnd
+        position={{ x: dimensions.x, y: dimensions.y }}
+        onDragStop={handleDragStop}
+        enableResizing={false}
+        style={{
+          cursor: 'default',
+        }}
+      >
+        {children}
+      </Rnd>
+    </div>
   );
 };
 

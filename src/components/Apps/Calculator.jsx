@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IoCloseCircleOutline } from 'react-icons/io5';
+import { MdClose } from 'react-icons/md';
 
 const Calculator = () => {
   const [input, setInput] = useState('');
@@ -38,10 +38,13 @@ const Calculator = () => {
   ];
 
   return (
-    <div className="w-96 h-96 flex flex-col items-center justify-center mt-36 rounded-sm">
-      <div className="bg-[#e4dbee] w-full h-10 p-3 flex justify-end border-b border-cyan-50 items-center shadow-inner">
-        <IoCloseCircleOutline size={30} />
+    <div className="w-96 rounded-sm">
+      <div className="bg-[#e4dbee]  w-full h-10 p-3 flex justify-end border-b border-cyan-50 items-center shadow-inner">
+        <div className="bg-red-900 text-white">
+          <MdClose size={30} />
+        </div>
       </div>
+
       <div className="bg-[#999999] text-black w-full p-4 shadow-lg">
         <div className="mb-4 p-2 bg-yellow-300  text-right text-lg font-perfect-dos">
           {input || '0'}
