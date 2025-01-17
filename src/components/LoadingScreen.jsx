@@ -9,19 +9,12 @@ const LoadingScreen = () => {
     'Checking hardware...',
     'CPU: i9 @ 4.0GHz',
     'RAM: 32GB DDR4',
-    'GPU: RTX 3080',
-    'SSD: 1TB',
-    'Detecting peripherals...',
-    'Keyboard: OK',
-    'Mouse: OK',
-    'Display: OK',
+    'Detecting peripherals: Keyboard, Mouse, Display',
     'Loading kernel...',
     'Initializing system...',
     'Starting services...',
     'Verifying accounts...',
     'Security check: OK',
-    'Firewall: On',
-    'Antivirus: Up-to-date',
     'lieOS running...',
     'Welcome to LieOS!',
   ];
@@ -42,7 +35,7 @@ const LoadingScreen = () => {
   }, []);
 
   return (
-    <div className="h-screen w-screen text-white font-perfect-dos bg-black text-2xl flex flex-col p-8">
+    <div className="h-screen w-screen text-white font-perfect-dos bg-black text-3xl flex flex-col p-8 gap-2">
       {messages.map((message, index) => (
         <span key={index}>{message}</span>
       ))}

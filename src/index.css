@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
   overflow: hidden;
-  height: 100dvh;
+}
+body {
+  height: 100lvh;
+  width: 100lvw;
   user-select: none;
   -webkit-user-select: none;
   background-image: url('../images/bg.jpg');

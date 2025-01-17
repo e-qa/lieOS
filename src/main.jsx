@@ -6,7 +6,9 @@ import AppContextProvider from './AppContext.jsx';
 createRoot(document.getElementById('root')).render(
   <>
     <AppContextProvider>
-      <App />
+      <>
+        <App />
+      </>
     </AppContextProvider>
   </>
 );

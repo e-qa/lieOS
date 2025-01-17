@@ -13,7 +13,7 @@ const Drag = ({ children, x = 250, y = 50 }) => {
   };
 
   return (
-    <div onClick={() => {}}>
+    <div>
       <Rnd
         position={{ x: dimensions.x, y: dimensions.y }}
         onDragStop={handleDragStop}
