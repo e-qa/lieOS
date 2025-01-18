@@ -1,10 +1,12 @@
 import { useRef, useState, useEffect } from 'react';
-import { MdClose } from 'react-icons/md';
+import { useAppContext } from '../../AppContext';
+import Close from '../Close';
 
 const TerminalApp = () => {
   const [command, setCommand] = useState('');
   const [output, setOutput] = useState([]);
   const inputRef = useRef(null);
+  const { distance } = useAppContext();
 
   useEffect(() => {
     setOutput([
@@ -64,13 +66,16 @@ const TerminalApp = () => {
     }
   };
 
+  const handleFocus = () => {
+    if (distance) {
+      return;
+    }
+    inputRef.current.focus();
+  };
+
   return (
-    <div onClick={() => inputRef.current.focus()}>
-      <div className="bg-[#e4dbee] w-full h-10 p-3 flex justify-end border-b border-cyan-50 items-center shadow-inner">
-        <div className="bg-red-900 text-white">
-          <MdClose size={30} />
-        </div>
-      </div>
+    <div onClick={handleFocus}>
+      <Close name={'terminal'} />
       <div className="w-[40rem] h-96 bg-black overflow-y-auto p-4">
         <div className="text-white flex flex-col">
           {output.map((line, index) => (

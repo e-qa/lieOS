@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { Rnd } from 'react-rnd';
+import PropTypes from 'prop-types';
 
 const Drag = ({ children, x = 250, y = 50 }) => {
   const [dimensions, setDimensions] = useState({
@@ -26,6 +26,12 @@ const Drag = ({ children, x = 250, y = 50 }) => {
       </Rnd>
     </div>
   );
+};
+
+Drag.propTypes = {
+  children: PropTypes.node.isRequired,
+  x: PropTypes.number,
+  y: PropTypes.number,
 };
 
 export default Drag;

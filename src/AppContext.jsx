@@ -1,10 +1,10 @@
 import { createContext, useContext, useState } from 'react';
-
+import PropTypes from 'prop-types';
 const AppContext = createContext();
 
-// eslint-disable-next-line react/prop-types
 export default function AppContextProvider({ children }) {
   const [activeApps, setActiveApps] = useState([]);
+  const [distance, setDistance] = useState(false);
 
   const openApp = (appName) => {
     if (activeApps[activeApps.length - 1] === appName) {
@@ -17,10 +17,20 @@ export default function AppContextProvider({ children }) {
     });
   };
 
+  const closeApp = (appName) => {
+    setActiveApps((prev) => {
+      const current = prev.filter((item) => item !== appName);
+      return [...current];
+    });
+  };
+
   const contextValue = {
     activeApps,
     setActiveApps,
     openApp,
+    distance,
+    setDistance,
+    closeApp,
   };
 
   return (
@@ -38,3 +48,7 @@ export function useAppContext() {
 
   return context;
 }
+
+AppContextProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};

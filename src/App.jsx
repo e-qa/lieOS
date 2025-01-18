@@ -5,6 +5,7 @@ import TaskBar from './components/TaskBar';
 import RenderApp from './RenderApp';
 import LoadingScreen from './components/LoadingScreen';
 import { detecDevice } from './utils/utils';
+import EdgeNotification from './Test';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
           <TaskBar />
           <AllApps />
           <RenderApp />
+          <EdgeNotification />
         </>
       ) : (
         <div className="bg-black w-screen h-screen text-white flex justify-center items-center">
