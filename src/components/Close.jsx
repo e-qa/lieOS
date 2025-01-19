@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Close = ({ name }) => {
   const { closeApp } = useAppContext();
   return (
-    <div className="bg-[#e4dbee] w-full h-10 p-3 flex justify-end border-b border-cyan-50 items-center shadow-inner">
+    <div className="drag-handle bg-[#e4dbee] w-full h-10 p-3 flex justify-end border-b border-cyan-50 items-center shadow-inner">
       <button
         className="bg-red-900 text-white"
         onClick={() => {

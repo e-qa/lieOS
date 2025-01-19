@@ -17,6 +17,7 @@ const Drag = ({ children, x = 250, y = 50 }) => {
       <Rnd
         position={{ x: dimensions.x, y: dimensions.y }}
         onDragStop={handleDragStop}
+        dragHandleClassName="drag-handle"
         enableResizing={false}
         style={{
           cursor: 'default',

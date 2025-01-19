@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "name": "MY PC",
+    "img": "/images/monitor.svg"
+  },
+  {
+    "id": 1,
+    "name": "Pictures",
+    "img": "/images/folder.svg"
+  },
+  {
+    "id": 2,
+    "name": "Folders",
+    "img": "/images/note.svg"
+  }
+]

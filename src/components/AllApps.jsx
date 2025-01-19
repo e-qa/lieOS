@@ -9,7 +9,7 @@ const AllApps = () => {
       {data.map((app) => (
         <Drag x={app.x} y={app.y} key={app.id}>
           <div
-            className="-z-20 hover:bg-slate-400 flex flex-col items-center p-2"
+            className="-z-20 hover:bg-slate-400 flex flex-col items-center p-2 drag-handle"
             onDoubleClick={() => {
               openApp(app.name);
             }}
