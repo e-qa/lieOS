@@ -25,7 +25,7 @@ function MyPC() {
             )}
             {openContent === 'Desktop' && <Desktop />}
             {openContent === 'Pictures' && <p>Pictures</p>}
-            {openContent === 'Folders' && <p>Music</p>}
+            {openContent === 'Folders' && <p>Folders</p>}
           </div>
         </div>
       </div>

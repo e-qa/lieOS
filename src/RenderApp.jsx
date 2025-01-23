@@ -5,6 +5,7 @@ import { appComponents } from './components/AppComponents';
 
 const RenderApp = () => {
   const { activeApps, openApp } = useAppContext();
+  console.log(activeApps);
 
   return (
     <div>

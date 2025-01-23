@@ -15,6 +15,7 @@ const FullScreen = () => {
       <button onClick={toggleFullScreen}>
         <MdFullscreen className="text-3xl" />
       </button>
+
       <button>
         <FaBatteryFull className="text-3xl" />
       </button>

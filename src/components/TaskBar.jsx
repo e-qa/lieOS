@@ -3,10 +3,13 @@ import Clock from './Clock';
 import FullScreen from './FullScreen';
 import { useAppContext } from '../AppContext';
 
+//TODO ADD ALL IMG
+
 const appsImg = {
   'calc.app': '/images/calculator-2.svg',
   'My PC': '/images/monitor.svg',
   terminal: '/images/terminal.svg',
+  'about-me.txt': '/images/note.svg',
 };
 
 const TaskBar = () => {

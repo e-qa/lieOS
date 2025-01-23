@@ -29,7 +29,7 @@ const MyPcContent = () => {
       </ul>
       <div className="mt-16 border-2 border-t-cyan-50"></div>
       <div className="flex ml-3">
-        <div className="flex   border border-1 hover:bg-slate-50 w-60">
+        <div className="flex border border-1 hover:bg-slate-50 w-60">
           <img src={disk} alt="DVD icon" className="w-12" />
           <div className="flex flex-col justify-center items-center gap-1">
             <p className="text-xl">Local Disk(C:)</p>
