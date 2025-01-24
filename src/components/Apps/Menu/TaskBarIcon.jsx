@@ -3,14 +3,13 @@ import eIcon from '/images/e-button-icon.png';
 import Menu from './Menu';
 
 const TaskBarIcon = () => {
-  const [isFalse, setIsFalse] = useState(false);
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div>
-      {isFalse && <Menu />}
+      {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
       <button
         onClick={() => {
-          setIsFalse(!isFalse);
+          setIsMenuOpen(!isMenuOpen);
         }}
         className="hover:bg-[#bababb] p-1"
       >

@@ -1,11 +1,13 @@
+import PropTypes from 'prop-types';
 import { useAppContext } from '../../../AppContext';
 
-const Menu = () => {
+const Menu = ({ setIsMenuOpen }) => {
   const { activeApps, setActiveApps } = useAppContext();
 
   const handleAppActivation = (appName) => {
     if (activeApps.includes(appName)) return;
     setActiveApps((prev) => [...prev, appName]);
+    setIsMenuOpen(false);
   };
 
   const menuItems = [
@@ -16,7 +18,7 @@ const Menu = () => {
   ];
 
   return (
-    <div className="w-64 h-80 bg-[#e4dbee] absolute bottom-[3.2rem] border-b-2 shadow-[4px_-3px_0px_1px_rgba(0,_0,_0,_0.1)] font-perfect-dos">
+    <div className="w-64 h-80 bg-[#e4dbee] absolute bottom-[3rem] border-b-2 shadow-[4px_-3px_0px_1px_rgba(0,_0,_0,_0.1)] font-perfect-dos">
       <ul className="text-xl pt-4 flex flex-col gap-2">
         {menuItems.map(({ name, app, delay }) => (
           <li
@@ -29,6 +31,10 @@ const Menu = () => {
       </ul>
     </div>
   );
+};
+
+Menu.propTypes = {
+  setIsMenuOpen: PropTypes.func.isRequired,
 };
 
 export default Menu;
