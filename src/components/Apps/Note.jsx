@@ -5,10 +5,10 @@ const Note = () => {
     <div className="font-perfect-dos">
       <Close name={'about-me.txt'} />
       <div className="w-[55rem] h-[40rem] flex flex-col justify-center items-center bg-[#4d4d4e] border border-gray-400 overflow-auto">
-        <div className="w-[40rem] h-[90rem] bg-white px-10 mt-10 shadow-[rgba(0,_0,_0,_0.80)_10px_10px_2px]">
+        <div className="w-[40rem] h-full bg-white px-10 mt-10 shadow-[rgba(0,_0,_0,_0.80)_10px_10px_2px]">
           <h1 className="text-center my-10 text-2xl">About me</h1>
           <div className="h-full w-full flex flex-col gap-10">
-            <p>Hello! I&apos;m Eli, and I&apos;m front-end Developer.</p>
+            <p>Hello! I&apos;m Eli, and I&apos;m Front-end Developer.🪄</p>
             <p>
               My toolkit primarily includes React and Next.js, which I use to
               build dynamic applications that perform seamlessly. Writing code

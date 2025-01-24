@@ -4,7 +4,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'perfect-dos': ['Perfect-DOS-VGA-437', 'monospace'], // fontu burada tanımlıyoruz
+        'perfect-dos': ['Perfect-DOS-VGA-437', 'monospace'],
+      },
+      animation: {
+        'slide-in': 'slideIn 0.3s ease-out forwards',
+      },
+      keyframes: {
+        slideIn: {
+          '0%': { opacity: 0, transform: 'translateY(100px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
       },
     },
   },

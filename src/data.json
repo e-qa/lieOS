@@ -10,27 +10,20 @@
     "id": 1,
     "x": 5,
     "y": 120,
-    "img": "/images/folder.svg",
-    "name": "folder"
+    "img": "/images/monitor.svg",
+    "name": "My PC"
   },
   {
     "id": 2,
     "x": 5,
     "y": 220,
-    "img": "/images/monitor.svg",
-    "name": "My PC"
-  },
-  {
-    "id": 3,
-    "x": 5,
-    "y": 320,
     "img": "/images/note.svg",
     "name": "about-me.txt"
   },
   {
-    "id": 4,
+    "id": 3,
     "x": 5,
-    "y": 440,
+    "y": 340,
     "img": "/images/terminal.svg",
     "name": "terminal"
   }

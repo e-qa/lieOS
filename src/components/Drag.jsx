@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Rnd } from 'react-rnd';
 import PropTypes from 'prop-types';
 
-const Drag = ({ children, x = 150, y = 50 }) => {
+const Drag = ({ children, x = 150, y = 10 }) => {
   const [dimensions, setDimensions] = useState({
     x: x,
     y: y,
