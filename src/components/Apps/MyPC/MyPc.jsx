@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Close from '../../Close';
 import SideBar from './SideBar';
-import Desktop from './Desktop';
 import MyPcContent from './MyPcContent';
 import Folders from './Folders';
 import Pictures from './Pictures';
@@ -25,7 +24,6 @@ function MyPC() {
             {openContent === 'MY PC' && (
               <MyPcContent setOpenContent={setOpenContent} />
             )}
-            {openContent === 'Desktop' && <Desktop />}
             {openContent === 'Pictures' && <Pictures />}
             {openContent === 'Folders' && <Folders />}
           </div>
