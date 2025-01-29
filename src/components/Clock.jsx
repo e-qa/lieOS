@@ -11,7 +11,7 @@ const Clock = () => {
   }, []);
 
   return (
-    <div className="font-perfect-dos text-xl font-bold">{currentTime}</div>
+    <div className="font-perfect-dos text-xl font-bold ml-2">{currentTime}</div>
   );
 };
 

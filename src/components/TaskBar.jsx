@@ -2,6 +2,7 @@ import Clock from './Clock';
 import FullScreen from './FullScreen';
 import { useAppContext } from '../AppContext';
 import TaskBarIcon from './Apps/Menu/TaskBarIcon';
+import Battery from './Battery';
 
 //TODO ADD ALL IMG
 
@@ -17,7 +18,7 @@ const TaskBar = () => {
   return (
     <div className="absolute bottom-0 w-full z-50">
       <div className="bg-[#e4dbee] shadow-sm shadow-black flex justify-between items-center">
-        <div className=" p-0 flex gap-5 justify-center items-center">
+        <div className="p-0 flex gap-5 justify-center items-center">
           <TaskBarIcon />
           <div className="flex gap-3">
             {activeApps.map((app) => {
@@ -27,8 +28,9 @@ const TaskBar = () => {
             })}
           </div>
         </div>
-        <div className="pr-5 flex items-center  justify-center gap-3">
+        <div className="flex items-center justify-center gap-3 mr-4">
           <FullScreen />
+          <Battery />
           <Clock />
         </div>
       </div>

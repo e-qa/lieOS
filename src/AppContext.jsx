@@ -5,6 +5,7 @@ const AppContext = createContext();
 export default function AppContextProvider({ children }) {
   const [activeApps, setActiveApps] = useState([]);
   const [distance, setDistance] = useState(false);
+  const [brightness, setBrightness] = useState(100);
 
   const openApp = (appName) => {
     if (activeApps[activeApps.length - 1] === appName) {
@@ -31,6 +32,8 @@ export default function AppContextProvider({ children }) {
     distance,
     setDistance,
     closeApp,
+    brightness,
+    setBrightness,
   };
 
   return (
