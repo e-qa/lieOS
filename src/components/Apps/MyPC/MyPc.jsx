@@ -3,6 +3,8 @@ import Close from '../../Close';
 import SideBar from './SideBar';
 import Desktop from './Desktop';
 import MyPcContent from './MyPcContent';
+import Folders from './Folders';
+import Pictures from './Pictures';
 
 function MyPC() {
   const [openContent, setOpenContent] = useState('MY PC');
@@ -24,8 +26,8 @@ function MyPC() {
               <MyPcContent setOpenContent={setOpenContent} />
             )}
             {openContent === 'Desktop' && <Desktop />}
-            {openContent === 'Pictures' && <p>Pictures</p>}
-            {openContent === 'Folders' && <p>Folders</p>}
+            {openContent === 'Pictures' && <Pictures />}
+            {openContent === 'Folders' && <Folders />}
           </div>
         </div>
       </div>

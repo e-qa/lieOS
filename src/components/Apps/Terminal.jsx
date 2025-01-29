@@ -76,7 +76,7 @@ const TerminalApp = () => {
   return (
     <div onClick={handleFocus}>
       <Close name={'terminal'} />
-      <div className="w-[40rem] h-96 bg-black overflow-y-auto p-4">
+      <div className="w-[40rem] h-96 bg-black overflow-y-auto p-4 font-perfect-dos text-base">
         <div className="text-white flex flex-col">
           {output.map((line, index) => (
             <div key={index} className="flex flex-col">
